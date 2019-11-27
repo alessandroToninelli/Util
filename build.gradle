@@ -3,8 +3,8 @@
 buildscript {
 
     ext.versions = [
-            'libVersionCode'     : 10000,
-            'libVersionName'     : '1.0.0',
+            'libVersionCode'     : 10002,
+            'libVersionName'     : '1.0.2',
             'compileSdk'         : 29,
             'minSdk'             : 14,
             'targetSdk'          : 29,

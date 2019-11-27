@@ -23,7 +23,7 @@ bintray {
     override = true
     pkg {
         repo = 'toninelli-library'
-        name = 'util'
+        name = 'file-util'
         description = "A util library"
         publicDownloadNumbers = true
         licenses = ['Apache-2.0']

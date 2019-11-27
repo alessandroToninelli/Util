@@ -1,4 +1,4 @@
-package com.example.lib
+package com.toninelli.fileutil
 
 fun <T> List<T>.nullIfEmpty(): List<T>? {
     return if (this.isEmpty())

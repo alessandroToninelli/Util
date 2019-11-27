@@ -1,4 +1,4 @@
-package com.example.util
+package com.toninelli.util
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

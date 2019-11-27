@@ -1,4 +1,4 @@
-package com.example.lib
+package com.toninelli.fileutil
 
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.subjects.BehaviorSubject

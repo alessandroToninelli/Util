@@ -1,4 +1,4 @@
-package com.example.lib
+package com.toninelli.fileutil
 
 import org.junit.Test
 

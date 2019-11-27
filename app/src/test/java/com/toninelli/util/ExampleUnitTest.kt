@@ -1,4 +1,4 @@
-package com.example.util
+package com.toninelli.util
 
 import org.junit.Test
 

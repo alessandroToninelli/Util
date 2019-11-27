@@ -1,4 +1,4 @@
-package com.example.lib
+package com.toninelli.fileutil
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle

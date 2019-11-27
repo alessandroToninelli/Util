@@ -1,0 +1,41 @@
+apply plugin: 'com.jfrog.bintray'
+
+group 'com.ale.lib'
+version versions.libVersionName
+
+project.ext {
+    mavGitUrl = 'https://github.com/alessandroToninelli/Util.git'
+    mavProjectName = 'util'
+    mavLibraryLicenses = ["Apache-2.0":'http://www.apache.org/licenses/LICENSE-2.0.txt']
+    mavLibraryDescription = "A util library"
+    mavPublishToMavenLocal = true
+    mavSiteUrl = 'https://github.com/alessandroToninelli/Util'
+}
+
+
+def properties = new Properties()
+properties.load(new FileInputStream("local.properties"))
+
+bintray {
+    user = properties.getProperty("bintray.user")
+    key = properties.getProperty("bintray.apikey")
+    publications = ['mavenPublish']
+    configurations = ['archives']
+    override = true
+    pkg {
+        repo = 'toninelli-library'
+        name = 'util'
+        description = "A util library"
+        publicDownloadNumbers = true
+        licenses = ['Apache-2.0']
+        vcsUrl = 'https://github.com/alessandroToninelli/Util.git'
+        version {
+            name = versions.libVersionName
+            desc = "Version ${versions.libVersionName}"
+            released = new Date()
+            vcsTag = versions.libVersionName
+        }
+    }
+}
+
+apply from: 'https://raw.githubusercontent.com/sky-uk/gradle-maven-plugin/master/gradle-mavenizer.gradle'

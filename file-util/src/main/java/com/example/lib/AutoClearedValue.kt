@@ -1,4 +1,4 @@
-package com.toninelli.ton_extranet.util
+package com.example.lib
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle

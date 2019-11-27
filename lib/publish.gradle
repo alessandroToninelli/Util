@@ -12,7 +12,6 @@ project.ext {
     mavSiteUrl = 'https://github.com/alessandroToninelli/Util'
 }
 
-
 def properties = new Properties()
 properties.load(new FileInputStream("local.properties"))
 

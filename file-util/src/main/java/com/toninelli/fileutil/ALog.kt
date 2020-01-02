@@ -23,7 +23,7 @@ object ALog {
         }
     }
 
-    fun e(vararg objects: Any) {
+    fun e(vararg objects: Any?) {
         if (enableLog) {
             val fullClassName = Thread.currentThread().stackTrace[4].className
             val className = fullClassName.substring(fullClassName.lastIndexOf(".") + 1)
@@ -54,7 +54,7 @@ object ALog {
     }
 }
 
-fun logd(vararg obj: Any) = ALog.d(*obj)
-fun loge(vararg obj: Any) = ALog.e(*obj)
+fun logd(vararg obj: Any?) = ALog.d(*obj)
+fun loge(vararg obj: Any?) = ALog.e(*obj)
 fun logv(msg: String) = ALog.v(msg)
 fun logi(msg: String) = ALog.i(msg)

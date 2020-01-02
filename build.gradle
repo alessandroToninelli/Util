@@ -32,7 +32,7 @@ buildscript {
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath 'com.android.tools.build:gradle:3.5.3'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
         classpath "org.jetbrains.kotlin:kotlin-android-extensions:${versions.kotlin}"
         classpath "com.github.ben-manes:gradle-versions-plugin:0.25.0"

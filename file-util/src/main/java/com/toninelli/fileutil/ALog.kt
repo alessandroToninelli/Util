@@ -35,7 +35,7 @@ object ALog {
         }
     }
 
-    fun d(vararg objects: Any) {
+    fun d(vararg objects: Any?) {
         if (enableLog) {
             val fullClassName = Thread.currentThread().stackTrace[4].className
             val className = fullClassName.substring(fullClassName.lastIndexOf(".") + 1)
@@ -47,9 +47,9 @@ object ALog {
         }
     }
 
-    private fun str(vararg objects: Any): String {
+    private fun str(vararg objects: Any?): String {
         val stringBuilder = StringBuilder()
-        objects.forEach { stringBuilder.append(it) }
+        objects.forEach { stringBuilder.append(it ?: "null") }
         return stringBuilder.toString()
     }
 }
